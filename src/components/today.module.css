@@ -1,0 +1,106 @@
+.today {
+    /* max-width: 400px; */
+    flex: 2;
+    /* margin: 40px auto; */
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.today h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.today p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+/* Weather Section Styles */
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+/* Air Section Styles */
+
+.air {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.air div {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Today Forecast Section Styles */
+
+.todayforecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.todayforecast div {
+    /* width: max-content; */
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a656563c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .today {
+        flex: 1;
+    }
+
+    .weather div,
+    .air div,
+    .todayforecast div {
+        width: max-content;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .today {
+        flex: 1;
+    }
+
+    .weather div,
+    .air div,
+    .todayforecast div {
+        width: max-content;
+        margin: 3px;
+    }
+}
